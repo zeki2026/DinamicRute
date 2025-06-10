@@ -1,12 +1,27 @@
 package com.chapter.bd.tools.app.chapterbd_tools.models;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class CrewStatusDetailDto {
+    @JsonProperty("cuadrilla")
     private Long crew;
+
+    @JsonProperty("estatus")
     private Integer status;
+
+    @JsonProperty("descripcion")
     private String crewType;
+
+    @JsonProperty("maxClientes")
     private Integer maxCu;
+
+    @JsonProperty("minClientes")
     private Integer minCu;
+
+    @JsonProperty("numEmpleados")
     private Integer employeeCounter;
+
+    @JsonProperty("numTareas")
     private Integer dutyCounter;
 
     public CrewStatusDetailDto(){

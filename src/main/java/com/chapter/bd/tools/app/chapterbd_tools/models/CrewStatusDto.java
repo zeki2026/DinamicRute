@@ -4,18 +4,26 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class CrewStatusDto {
 
-    @JsonProperty("COUNTER")
+    @JsonProperty("numCuadrillas")
     private String counter;
 
-    @JsonProperty("STATUS")
+    @JsonProperty("estatus")
     private String status;
 
-    @JsonProperty("DESCRIPTION")
+    @JsonProperty("descripcion")
     private String description;
 
     public CrewStatusDto(){
         
     }
+
+
+    public CrewStatusDto(String counter, String status, String description) {
+        this.counter = counter;
+        this.status = status;
+        this.description = description;
+    }
+
 
     public String getCounter() {
         return counter;
